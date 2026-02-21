@@ -1,0 +1,35 @@
+/* Navbar.css */
+nav {
+    background-color: gray; /* Dark background */
+    padding: 10px 20px; /* Padding around the navbar */
+    /* border: 10px solid black; */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Distribute the items evenly */
+    /* border: 5px solid black; */
+    width:50%;
+    margin-left: 500px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    padding: 10px 20px; /* Padding inside each link */
+    display: block;
+  }
+  
+  a:hover {
+    background-color: #575757; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+  }
+  

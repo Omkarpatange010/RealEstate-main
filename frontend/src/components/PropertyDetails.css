@@ -1,0 +1,46 @@
+
+.property-image{
+  /* border:10px solid black; */
+  /* display: flex;
+  align-items: center; */
+  margin-left: 30px;
+
+}
+.p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center-btn {
+  display: block; /* Make the button behave like a block element */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjust modal width */
+.custom-modal .modal-dialog {
+  max-width: 300px; /* Set the width of the modal to 200px */
+  margin-top: 0;
+  border: 2px solid black; 
+}
+
+/* Optional: Style the modal content for further adjustments */
+.custom-modal .modal-content {
+ 
+}
+
+/* Optional: Customize the input fields */
+.bordered-input {
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.cont {
+  position: relative; /* Make sure that positioning works as expected */
+}
+
+.btnClose{
+  border-radius: 5px;
+ 
+}

@@ -1,0 +1,150 @@
+.home-container {
+  padding: 20px;
+  max-width: 100%;
+}
+
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.property-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Ensures equal spacing between cards */
+  align-items: stretch; 
+}
+
+.property-card {
+  width: 450px; /* Consistent width */
+  min-height: 450px; /* Dynamic height for varied content */
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+} */
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-text.description {
+  margin-bottom: 10px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Truncate long descriptions */
+}
+
+.card-text.amenities {
+  font-style: italic;
+  color: #777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Truncate long amenities list */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.video-section {
+  margin-top: 40px;
+  text-align: center;
+  height: 100px;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.video-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Location Search Bar */
+.location-search {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.location-search select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.location-search select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.location-search option {
+  padding: 10px;
+}
+
+/* Optional: Style the placeholder for better visibility */
+.location-search option[value=""] {
+  color: #888;
+}

@@ -1,0 +1,119 @@
+/* Container for the whole page */
+.property-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header styles */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Loading state styles */
+  .loading {
+    font-size: 1.5rem;
+    color: #888;
+  }
+  
+  /* Grid container for property cards */
+  .property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual property card styles */
+  .property-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Property details section */
+  .property-details {
+    padding: 15px;
+  }
+  
+  .property-details h5 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .property-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .property-details strong {
+    font-weight: bold;
+  }
+  
+  .property-details .btn-more-details,
+  .property-details .btn-update,
+  .property-details .btn-delete {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .property-details .btn-more-details {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .property-details .btn-update {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .property-details .btn-delete {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .property-details .btn-more-details:hover {
+    background-color: #0056b3;
+  }
+  
+  .property-details .btn-update:hover {
+    background-color: #ec971f;
+  }
+  
+  .property-details .btn-delete:hover {
+    background-color: #c9302c;
+  }
+  

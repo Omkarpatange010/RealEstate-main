@@ -1,0 +1,22 @@
+.user-profile-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .user-info {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+  }
+  
+  .user-profile-container h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
