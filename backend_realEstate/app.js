@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -13,7 +14,10 @@ const path = require('path'); // To manage file paths
 // const conversationRoutes = require('./Routers/ConversationRoutes')
 const intBuyerRouter = require('./Routers/interested')
 
-app.use(cors());  // This will enable CORS for all routes
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || 'http://localhost:4000',
+  credentials: true
+}));  // This will enable CORS for all routes
 app.use(express.json());
 
 // Root route — optional but useful to test server
@@ -24,7 +28,8 @@ app.get('/', (req, res) => {
 // app.use(express.urlencoded({extended:false}))
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/RealEstate')
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/RealEstate';
+mongoose.connect(mongoURI)
   .then(() => console.log('MongoDB connected successfully'))
   .catch(err => console.log('MongoDB connection error:', err));
 
@@ -59,5 +64,5 @@ app.post('/upload', upload.single('image'), (req, res) => {
   }
 });
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
