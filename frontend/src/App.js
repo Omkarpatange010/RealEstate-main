@@ -11,7 +11,7 @@ import CreateProperty from './components/CreateProperty';
 // import ProjectSearch from './components/ProjectSearch';
 import UserProfile from './components/UserProfile';
 import './App.css'
-import 'leaflet/dist/leaflet.css';
+// import 'leaflet/dist/leaflet.css';
 import PropertySearch from './components/PropertySearch';
 import PrivateRoute from './components/PrivateRoute'
 import PropertyDetails from './components/PropertyDetails';
